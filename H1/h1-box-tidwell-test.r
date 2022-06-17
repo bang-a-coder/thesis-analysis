@@ -2,9 +2,11 @@
 # install.packages("tidyverse")
 # install.packages("car")
 
+library(tidyverse)
 library(car)
 library(ggplot2)
 
-df <- read.csv(file = "data/prepped-r.csv")
+df <- read.csv(file = "data/prepped-r.csv", sep = ',')
 
-boxTidwell(formula = pdynamic ~ ddist_year, data = df)
+View(df)
+# boxTidwell(formula = pdynamic ~ ddist_year, data = df)
